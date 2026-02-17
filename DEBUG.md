@@ -101,10 +101,6 @@ if (global.debug == 1)
     draw_text_ext_transformed_color(x1, (y1 + battle_ui.y) - 401, "DEBUG", 120, 160, 2, 2, 0, col1, col1, col1, col1, battle_ui.image_alpha);
     gpu_set_blendmode(bm_normal);
 }
-```
-> **WARNING:** If u not want to copy this code here, this code is avaliable in the Mobile Stuff .zip too!<br />
-> (in the location **mobile-controls-location/debug things/**)<br />
-> (in this location, there's the **Create** code too!)
 
 # And finished!
 
