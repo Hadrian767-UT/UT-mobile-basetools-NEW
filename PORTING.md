@@ -237,9 +237,9 @@ Extract it
 ### Add controls via script
 
 Click in `Scripts → Run other script`<br />
-Select the folder `**mobile-controls-location\a-random\MobileScript.csx**`<br />
+Select the folder `mobile-controls-location\a-random\MobileScript.csx`<br />
 
-**WARNING: ** The **a-random** means any folders..
+**WARNING:** The **a-random** means any folders..
 Click in first folder if your game use only the default soul mechanics (using **UP, DOWN, LEFT and RIGHT**).
 Click in second folder if your game use the Double Souls mechanics (using **UP, DOWN, LEFT and RIGHT** and **W, A, S and D**.
 
