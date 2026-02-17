@@ -153,7 +153,7 @@ The sprites don't be need to be exported. I will explain it later.
 ##### Fonts
 
 Click in `Scripts → Run other script`<br />
-Select the folder `**mobile-controls-location\NewFontsTextureRepacker.csx**<br />
+Select the folder `**mobile-controls-location\NewFontsTextureRepacker.csx**`<br />
 Click in `No` for the question<br />
 And wait the fonts being imported.
 
@@ -231,203 +231,34 @@ Do the same thing in this codes:<br />
 
 ## Step Three: Mobile Stuff (Controls)
 
-Download the [Mobile Controls Code](https://github.com/Hadrian767-UT/UT-mobile-basetools/blob/main/Undertale%20Hadrian's%20Mobile%20Controls.zip)<br />
+Download the [Mobile Controls Code]([https://github.com/Hadrian767-UT/UT-mobile-basetools/blob/main/Undertale%20Hadrian's%20Mobile%20Controls.zip](https://github.com/Hadrian767-UT/UT-mobile-basetools-NEW/blob/main/Undertale%20Hadrian's%20Mobile%20Controls%20(NEW!).zip))<br />
 Extract it
 
-### MobileKey
-
-#### Sprites
-
-Click in `Scripts → Resource Importers → ImportGraphics.csx`<br />
-Select the `mobile-controls-location/MobileKey/MK Codes/Sprites (crosu)`<br />
-(pls, don't use the sprite in `Sprites` location, is my sprite and i didn't authorize nobody to use it.)<br />
-Click in `Yes`<br />
-Click in `Ok` when it finish.<br />
-After it, search **spr_mobilekey** in search tab<br />
-Click in triangle in tab `Sprites` in `Data` (tab in the left of the screen)<br />
-Select the **spr_mobilekey** sprite<br />
-And modify the **Origin** (x = 32, y = 32)
-
-#### Sounds
-
-Click in `Scripts → Resource Importers → ImportAllSounds.csx`<br />
-Select the `mobile-controls-location/Sounds`<br />
-Click `Yes` for all, minus the two last (First: IsDecompressedOnLoad; Second: audiogroup name)<br />
-Click in `Ok`<br />
-And wait the sounds be imported.
-
-#### Fonts
-
-Click in `Scripts → Resource Importers → ImportFonts.csx`<br />
-Select the `mobile-controls-location/MobileKey/Fonts (TianQi Buttons)`<br />
-(TianQi is the chinese that create the buttons style from my MK, credit him if you will upload your port)<br />
-And wait the fonts being imported.
-
-#### Codes
-
-Click in `Scripts → Resource Importers → ImportGML.csx`<br />
-Select the `mobile-controls-location/MobileKey/MK Codes/Codes (TianQi Buttons)`<br />
-Click in `Yes`<br />
-And wait the codes being imported.
-
-#### Objects
-
-Click in the arrow, in the left side of **Objects** name<br />
-Roll the scroll bar until the end<br />
-And click two times in the **obj_mk** object.<br />
-Activate the **Persistent** flag, clicking in the box with the name **Persistent** in right side<br />
-And change **Group** to **1**.
-
-### Joystick
-
-#### Sprites
-
-Click in `Scripts → Resource Importers → ImportGraphics.csx`<br />
-Select the `mobile-controls-location/Joystick/Sprites`<br />
-Click in `Yes`<br />
-Click in `Ok` when it finish.
-
-#### Fonts
-
-Click in `Scripts → Resource Importers → ImportFonts.csx`<br />
-Select the `mobile-controls-location/Joystick/Fonts`<br />
-And wait the fonts being imported.
-
-#### Script
+### Add controls via script
 
 Click in `Scripts → Run other script`<br />
-Select the `mobile-controls-location/Joystick/idkmobilecontrols4/TouchControlsEnabler0830.csx`<br />
-(the `TouchControlsEnabler0403.csx` version is for the UTMT 0.4.0.3)<br />
-Click in `Yes` (if an dialog appear, annd the dialog only appear if the data.win name isn't "UNDERTALE")
+Select the folder `**mobile-controls-location\a-random\MobileScript.csx**`<br />
 
-#### Objects
+**WARNING: ** The **a-random** means any folders..
+Click in first folder if your game use only the default soul mechanics (using **UP, DOWN, LEFT and RIGHT**).
+Click in second folder if your game use the Double Souls mechanics (using **UP, DOWN, LEFT and RIGHT** and **W, A, S and D**.
 
-Click in the arrow, in the left side of **Objects** name<br />
-Roll the scroll bar until the end<br />
-And click two times in the **obj_mobilecontrols** object.<br />
-And change **Group** to **1**.
+Click in these for options:<br />
 
-### Arrows 
+`**Ok**` for the first question;<br />
+`**Yes**` for the second question;<br />
+`**Ok**` for the third question;<br />
+`**Ok**` for the fourth question;<br />
+`**Ok**` for the fifth question;<br />
+`**Ok**` for the sixteen question;<br />
+`**Yes**` for the seventeen question;<br />
+`**Ok**` for the eighth question;
 
-#### Script
-
-Click in `Scripts → Run other script`<br />
-Select the `mobile-controls-location/ArrowsYippie/TouchControlsEnabler0830.csx`<br />
-Click in `Yes` (if an dialog appear, annd the dialog only appear if the data.win name isn't "UNDERTALE")
-
-#### Objects
-
-Click in the arrow, in the left side of **Objects** name<br />
-Roll the scroll bar until the end<br />
-And click two times in the **obj_mobilecontrols** object.<br />
-And change **Group** to **1**.
-
-### Dual Clicker
-
-Click in `Scripts → Resource Importers → ImportGML.csx`<br />
-Select the `mobile-controls-location/Dual Clicker NEW/obj_cc`<br />
-Click in `Yes`<br />
 > **COOL THINGS:** If you want to activate DEBUG button, just modify the variable `global.debug_legally` (it is in the code `gml_Object_obj_cc_Create_0`, change this value of `0` to `1`
 
-# Now, we will make the controllers appear
-
-Search `world` in search bar, and click in the code<br />
-
-```
-gml_Object_world_Other_2
-```
-And above the line<br />
-
-```gml
-instance_create_depth(0, 0, 0, closed_captions);
-```
-
-Add:
-
-```gml
-instance_create_depth(0, 0, -15998, obj_cc);
-```
-
-# Now, we will make the closed_captions always visible! (or almost visible) 
-
-Searching `closed_captions`, in the code:
-
-```
-gml_Object_closed_captions_Create_0;
-```
-
-in the line (for 2.3 or more)<br 
-
-```gml
-enum UnknownEnum
-{
-    Value_m100 = -100
-}
-```
-
-or in the line (for 2.2.2.302 or minus)
-
-```gml
-depth = 100;
-```
-
-We will switch Value_m100 (2.3 or +) or the depth (2.2.2.302 or -) for
-
-```gml
-2.3+:
-
-enum UnknownEnum
-{
-    Value_m100 = -15800
-}
-
-2.2.2.302-:
-
-depth = -15800;
-```
-
-Now, in the code:
-
-```
-gml_Object_closed_captions_Step_0;
-```
-
-In the line: 
-
-```gml
-2.3+:
-
-enum UnknownEnum
-{
-    Value_m200 = -200,
-    Value_1 = 1,
-    Value_3 = 3
-}
-
-2.2.2.302-:
-
-inst.text = "{instant true}{alpha 1}{gui true}{scale 2}{depth " + string(200) + "}" + text + "&";
-```
-
-we will switch for:
-
-```gml
-2.3+:
-
-enum UnknownEnum
-{
-    Value_m200 = -15900,
-    Value_1 = 1,
-    Value_3 = 3
-}
-
-2.2.2.302-:
-
-inst.text = "{instant true}{alpha 1}{gui true}{scale 2}{depth " + string(-15900) + "}" + text + "&";
-```
 # And all done in PC (at least for modifying)!
 
-To save your progress, click in `File → Save` or click **Ctrl + S**
+To save your progress, click in `File → Save` or click **Ctrl + S**<br />
 And click in **Enter** two times!
 
 # Moving the files for your phone
