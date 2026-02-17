@@ -153,7 +153,7 @@ The sprites don't be need to be exported. I will explain it later.
 ##### Fonts
 
 Click in `Scripts → Run other script`<br />
-Select the folder `**mobile-controls-location\NewFontsTextureRepacker.csx**`<br />
+Select the folder `mobile-controls-location\NewFontsTextureRepacker.csx`<br />
 Click in `No` for the question<br />
 And wait the fonts being imported.
 
@@ -245,14 +245,14 @@ Click in second folder if your game use the Double Souls mechanics (using **UP, 
 
 Click in these for options:<br />
 
-`**Ok**` for the first question;<br />
-`**Yes**` for the second question;<br />
-`**Ok**` for the third question;<br />
-`**Ok**` for the fourth question;<br />
-`**Ok**` for the fifth question;<br />
-`**Ok**` for the sixteen question;<br />
-`**Yes**` for the seventeen question;<br />
-`**Ok**` for the eighth question;
+`Ok` for the first question;<br />
+`Yes` for the second question;<br />
+`Ok` for the third question;<br />
+`Ok` for the fourth question;<br />
+`Ok` for the fifth question;<br />
+`Ok` for the sixteen question;<br />
+`Yes` for the seventeen question;<br />
+`Ok` for the eighth question;
 
 > **COOL THINGS:** If you want to activate DEBUG button, just modify the variable `global.debug_legally` (it is in the code `gml_Object_obj_cc_Create_0`, change this value of `0` to `1`
 
