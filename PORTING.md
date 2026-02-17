@@ -123,9 +123,7 @@ And others.
 
 ##### Fonts
 
-Click in `Scripts → Resource Exporters → ExportAllFonts.csx`<br />
-Select the folder that you will put the fonts (i recommend that u create an folder with name "fonts" in the working_directory (directory that the game are located))<br />
-And wait the magic happens.
+The fonts don't be need to be exported.
 
 ##### Sounds (skip this part if all of your sounds is .ogg)
 
@@ -154,8 +152,9 @@ The sprites don't be need to be exported. I will explain it later.
 
 ##### Fonts
 
-Click in `Scripts → Resource Importers → ImportFonts.csx`<br />
-Select the folder that u put the fonts<br />
+Click in `Scripts → Run other script`<br />
+Select the folder `**mobile-controls-location\NewFontsTextureRepacker.csx**<br />
+Click in `No` for the question<br />
 And wait the fonts being imported.
 
 ##### Sounds
@@ -178,6 +177,13 @@ In most of the fangames, the texture size (8192x8192) make the fonts and sprites
 #### And the sounds?
 
 About the sounds, some games have an exorbitant size of data.win because of the sounds .wav, so we make the conversion to .ogg for correct it.
+
+#### And the fonts?
+
+Before, it needed.<br />
+But now, i create an script to do it.<br />
+In the old method, in some times, it increase size of data.win<br />
+But with the new method, it increases only 1MB.
 
 ## Step Two: Mobile Corrections
 
