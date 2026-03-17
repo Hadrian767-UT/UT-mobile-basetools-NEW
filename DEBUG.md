@@ -101,6 +101,7 @@ if (global.debug == 1)
     draw_text_ext_transformed_color(x1, (y1 + battle_ui.y) - 401, "DEBUG", 120, 160, 2, 2, 0, col1, col1, col1, col1, battle_ui.image_alpha);
     gpu_set_blendmode(bm_normal);
 }
+```
 
 # And finished!
 
