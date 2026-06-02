@@ -194,7 +194,7 @@ But with the new method, it increases only 1MB.
 In first, do what this gif is making: <br />
 ![2026-01-07 22-50-59](https://github.com/user-attachments/assets/9f2d1c82-5d38-4559-8c8b-d1aea7aec667)
 (pls don't care about the Batch WAV to OGG Converter screen in keyboard image, it was an thing that i forgot to disable 😭)<br />
-It need to have done because if u don't do it, the `locale/` folder don't will work and u will got an error, and will no have sprites and fonts iin dialogs (if the game use)
+It need to have done because if u don't do it, the `locale/` folder don't will work and u will got an error, and will no have sprites and fonts in dialogs (if the game use)
 
 #### Editing the .txt files inside the folder
 
@@ -209,8 +209,8 @@ With the files opened, you will remove the `./` from the start of the paths, lik
 ### Console_Init Error Fix
 
 In first, again, see what are the game's GMS! (is in the top of the UTMT)
-If your GMS if 2023 or more, skip this step!
-But if your GMS is 2022.9 or minus, continue!
+If your GMS if 2023 or latest, skip this step!
+But if your GMS is 2022.9 or less, continue!
 After this, do what this gif is making:<br />
 ![2026-01-07 23-05-56](https://github.com/user-attachments/assets/49598b0b-eebf-489c-92d3-9c425a7622cc)<br />
 Do the same thing in this codes:<br />
